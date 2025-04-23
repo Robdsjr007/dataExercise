@@ -1,8 +1,8 @@
 import pandas as pd
 import mysql.connector 
 
-anoIncidentes = pd.read_csv("C:/Sgsp/ano_incidentes.csv", encoding="latin1", on_bad_lines='skip', sep=";")
-plan = pd.read_csv("C:/Sgsp/dataset.csv", encoding="latin1", on_bad_lines='skip', sep=";")
+anoIncidentes = pd.read_csv("ano_incidentes.csv", encoding="latin1", on_bad_lines='skip', sep=";")
+plan = pd.read_csv("dataset.csv", encoding="latin1", on_bad_lines='skip', sep=";")
 
 plan.columns = plan.columns.str.strip() #remove os espaços
 anoIncidentes.columns = anoIncidentes.columns.str.strip()
